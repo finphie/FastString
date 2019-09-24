@@ -9,13 +9,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="FastString.SpanJoin.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FastString.SpanJoin.tt</DependentUpon>
+    </None>
+    <None Include="FastString.StringJoin.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FastString.StringJoin.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="FastString.Concat.tt">
+    <None Update="FastString.SpanConcat.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>FastString.Concat.cs</LastGenOutput>
+      <LastGenOutput>FastString.SpanConcat.cs</LastGenOutput>
+    </None>
+    <None Update="FastString.SpanJoin.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FastString.SpanJoin.cs</LastGenOutput>
+    </None>
+    <None Update="FastString.StringConcat.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FastString.StringConcat.cs</LastGenOutput>
+    </None>
+    <None Update="FastString.StringJoin.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FastString.StringJoin.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
@@ -24,10 +49,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="FastString.Concat.cs">
+    <Compile Update="FastString.SpanConcat.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>FastString.Concat.tt</DependentUpon>
+      <DependentUpon>FastString.SpanConcat.tt</DependentUpon>
+    </Compile>
+    <Compile Update="FastString.SpanJoin.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FastString.SpanJoin.tt</DependentUpon>
+    </Compile>
+    <Compile Update="FastString.StringConcat.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FastString.StringConcat.tt</DependentUpon>
+    </Compile>
+    <Compile Update="FastString.StringJoin.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FastString.StringJoin.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 

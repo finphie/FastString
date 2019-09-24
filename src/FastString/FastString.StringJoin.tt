@@ -1,0 +1,50 @@
+<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ output extension=".cs" #>
+#if NETSTANDARD2_0
+using System.Runtime.CompilerServices;
+
+namespace FastStringUtility
+{
+    partial class FastString
+    {
+<# for (var Count = 0; Count < 15; Count++) { #>
+<# var parameters = Enumerable.Range(0, Count + 2).Select(x => $"str{x}").ToArray(); #>
+<# if (Count != 0) { #>
+
+<# } #>
+        /// <summary>
+        /// 指定した<#= Count + 2 #>個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
+        /// </summary>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+<# for (var i = 0;  i <= Count; i++) { #>
+        /// <param name="str<#= i + 1 #>">連結する<#= i + 2 #>番目の文字列</param>
+<# } #>
+        /// <returns>文字列</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static unsafe string Join(char separator, <#= string.Join(", ", parameters.Select(x => $"string {x}")) #>)
+        {
+            var length = <#= string.Join(" + ", parameters.Select(x => $"{x}.Length")) #> + <#= Count + 1 #>;
+
+            var str = new string(default, length);
+
+            fixed (char* strPointer = str)
+            {
+                var destination = strPointer;
+                BinaryHelper.Copy(destination, str0);
+<# for (var i = 0;  i <= Count; i++) { #>
+
+                destination += str<#= i #>.Length;
+                *destination++ = separator;
+                BinaryHelper.Copy(destination, str<#= i + 1 #>);
+<# } #>
+            }
+
+            return str;
+        }
+<# } #>
+    }
+}
+#endif

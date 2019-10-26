@@ -1,14 +1,29 @@
 # FastString
 
-.NET用高速文字列関連ライブラリです。
+.NETの用高速な文字列処理ライブラリです。
 
 ## 説明
 
-FastStringは、.NET用の文字列処理を高速化したライブラリです。
+FastStringは、.NET Core 3.0/.NET Standard 2.1, 2.0用の文字列処理を高速化したライブラリです。
 
 ## インストール
 
+（準備中）
+
 ## 使い方
+
+```csharp
+using FastStringUtility;
+
+var str0 = "abc";
+var str1 = "def";
+
+// abcdef
+var concat = FastString.Concat(str0, str1);
+
+// abc,def
+var join = FastString.Join(',', str0, str1);
+```
 
 ## 使用言語
 
@@ -35,4 +50,4 @@ MIT
 
 - System.Runtime.CompilerServices.Unsafe  
 <https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/>  
-  © Microsoft Corporation
+© Microsoft Corporation

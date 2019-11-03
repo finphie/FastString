@@ -1,0 +1,27 @@
+<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ output extension=".cs" #>
+using AutoFixture.Xunit2;
+using FluentAssertions;
+using Xunit;
+
+namespace FastStringUtility.Tests
+{
+    public class ConcatTest
+    {
+<# for (var Count = 0; Count < 15; Count++) { #>
+<# var parameters = Enumerable.Range(0, Count + 2).Select(x => $"str{x}").ToArray(); #>
+<# if (Count != 0) { #>
+
+<# } #>
+        [Theory, AutoData]
+        public void Parameter<#= Count #>_複数の文字列を入力_連結した文字列を返す(<#= string.Join(", ", parameters.Select(x => $"string {x}")) #>)
+        {
+            var str = FastString.Concat(<#= string.Join(", ", parameters) #>);
+
+            str.Should().Contain(string.Concat(<#= string.Join(", ", parameters) #>));
+        }
+<# } #>
+    }
+}

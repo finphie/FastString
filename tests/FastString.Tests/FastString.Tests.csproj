@@ -11,6 +11,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ConcatTest.tt</DependentUpon>
     </None>
+    <None Include="JoinTest.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>JoinTest.tt</DependentUpon>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +42,10 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ConcatTest.cs</LastGenOutput>
     </None>
+    <None Update="JoinTest.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>JoinTest.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +57,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ConcatTest.tt</DependentUpon>
+    </Compile>
+    <Compile Update="JoinTest.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>JoinTest.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 

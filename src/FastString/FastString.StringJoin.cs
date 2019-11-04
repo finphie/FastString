@@ -1,4 +1,4 @@
-#if NETSTANDARD2_0
+﻿#if NETSTANDARD2_0
 using System.Runtime.CompilerServices;
 
 namespace FastStringUtility
@@ -7,12 +7,12 @@ namespace FastStringUtility
     {
 
         /// <summary>
-        /// �w�肵��2�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した2個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1)
         {
@@ -35,13 +35,13 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��3�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した3個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2)
         {
@@ -68,14 +68,14 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��4�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した4個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3)
         {
@@ -106,15 +106,15 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��5�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した5個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4)
         {
@@ -149,16 +149,16 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��6�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した6個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5)
         {
@@ -197,17 +197,17 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��7�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した7個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6)
         {
@@ -250,18 +250,18 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��8�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した8個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7)
         {
@@ -308,19 +308,19 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��9�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した9個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <param name="str8">�A������9�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <param name="str8">連結する9番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8)
         {
@@ -371,20 +371,20 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��10�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した10個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <param name="str8">�A������9�Ԗڂ̕�����</param>
-        /// <param name="str9">�A������10�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <param name="str8">連結する9番目の文字列</param>
+        /// <param name="str9">連結する10番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9)
         {
@@ -439,21 +439,21 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��11�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した11個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <param name="str8">�A������9�Ԗڂ̕�����</param>
-        /// <param name="str9">�A������10�Ԗڂ̕�����</param>
-        /// <param name="str10">�A������11�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <param name="str8">連結する9番目の文字列</param>
+        /// <param name="str9">連結する10番目の文字列</param>
+        /// <param name="str10">連結する11番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10)
         {
@@ -512,22 +512,22 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��12�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した12個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <param name="str8">�A������9�Ԗڂ̕�����</param>
-        /// <param name="str9">�A������10�Ԗڂ̕�����</param>
-        /// <param name="str10">�A������11�Ԗڂ̕�����</param>
-        /// <param name="str11">�A������12�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <param name="str8">連結する9番目の文字列</param>
+        /// <param name="str9">連結する10番目の文字列</param>
+        /// <param name="str10">連結する11番目の文字列</param>
+        /// <param name="str11">連結する12番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11)
         {
@@ -590,23 +590,23 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��13�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した13個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <param name="str8">�A������9�Ԗڂ̕�����</param>
-        /// <param name="str9">�A������10�Ԗڂ̕�����</param>
-        /// <param name="str10">�A������11�Ԗڂ̕�����</param>
-        /// <param name="str11">�A������12�Ԗڂ̕�����</param>
-        /// <param name="str12">�A������13�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <param name="str8">連結する9番目の文字列</param>
+        /// <param name="str9">連結する10番目の文字列</param>
+        /// <param name="str10">連結する11番目の文字列</param>
+        /// <param name="str11">連結する12番目の文字列</param>
+        /// <param name="str12">連結する13番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12)
         {
@@ -673,24 +673,24 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��14�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した14個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <param name="str8">�A������9�Ԗڂ̕�����</param>
-        /// <param name="str9">�A������10�Ԗڂ̕�����</param>
-        /// <param name="str10">�A������11�Ԗڂ̕�����</param>
-        /// <param name="str11">�A������12�Ԗڂ̕�����</param>
-        /// <param name="str12">�A������13�Ԗڂ̕�����</param>
-        /// <param name="str13">�A������14�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <param name="str8">連結する9番目の文字列</param>
+        /// <param name="str9">連結する10番目の文字列</param>
+        /// <param name="str10">連結する11番目の文字列</param>
+        /// <param name="str11">連結する12番目の文字列</param>
+        /// <param name="str12">連結する13番目の文字列</param>
+        /// <param name="str13">連結する14番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13)
         {
@@ -761,25 +761,25 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��15�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した15個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <param name="str8">�A������9�Ԗڂ̕�����</param>
-        /// <param name="str9">�A������10�Ԗڂ̕�����</param>
-        /// <param name="str10">�A������11�Ԗڂ̕�����</param>
-        /// <param name="str11">�A������12�Ԗڂ̕�����</param>
-        /// <param name="str12">�A������13�Ԗڂ̕�����</param>
-        /// <param name="str13">�A������14�Ԗڂ̕�����</param>
-        /// <param name="str14">�A������15�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <param name="str8">連結する9番目の文字列</param>
+        /// <param name="str9">連結する10番目の文字列</param>
+        /// <param name="str10">連結する11番目の文字列</param>
+        /// <param name="str11">連結する12番目の文字列</param>
+        /// <param name="str12">連結する13番目の文字列</param>
+        /// <param name="str13">連結する14番目の文字列</param>
+        /// <param name="str14">連結する15番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13, string str14)
         {
@@ -854,26 +854,26 @@ namespace FastStringUtility
 
 
         /// <summary>
-        /// �w�肵��16�̕������A�����܂��B�e�v�f�̊Ԃɂ́A�w�肵����؂�L�����}������܂��B
+        /// 指定した16個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
-        /// <param name="separator">��؂�L��</param>
-        /// <param name="str0">�A������ŏ��̕�����</param>
-        /// <param name="str1">�A������2�Ԗڂ̕�����</param>
-        /// <param name="str2">�A������3�Ԗڂ̕�����</param>
-        /// <param name="str3">�A������4�Ԗڂ̕�����</param>
-        /// <param name="str4">�A������5�Ԗڂ̕�����</param>
-        /// <param name="str5">�A������6�Ԗڂ̕�����</param>
-        /// <param name="str6">�A������7�Ԗڂ̕�����</param>
-        /// <param name="str7">�A������8�Ԗڂ̕�����</param>
-        /// <param name="str8">�A������9�Ԗڂ̕�����</param>
-        /// <param name="str9">�A������10�Ԗڂ̕�����</param>
-        /// <param name="str10">�A������11�Ԗڂ̕�����</param>
-        /// <param name="str11">�A������12�Ԗڂ̕�����</param>
-        /// <param name="str12">�A������13�Ԗڂ̕�����</param>
-        /// <param name="str13">�A������14�Ԗڂ̕�����</param>
-        /// <param name="str14">�A������15�Ԗڂ̕�����</param>
-        /// <param name="str15">�A������16�Ԗڂ̕�����</param>
-        /// <returns>������</returns>
+        /// <param name="separator">区切り記号</param>
+        /// <param name="str0">連結する最初の文字列</param>
+        /// <param name="str1">連結する2番目の文字列</param>
+        /// <param name="str2">連結する3番目の文字列</param>
+        /// <param name="str3">連結する4番目の文字列</param>
+        /// <param name="str4">連結する5番目の文字列</param>
+        /// <param name="str5">連結する6番目の文字列</param>
+        /// <param name="str6">連結する7番目の文字列</param>
+        /// <param name="str7">連結する8番目の文字列</param>
+        /// <param name="str8">連結する9番目の文字列</param>
+        /// <param name="str9">連結する10番目の文字列</param>
+        /// <param name="str10">連結する11番目の文字列</param>
+        /// <param name="str11">連結する12番目の文字列</param>
+        /// <param name="str12">連結する13番目の文字列</param>
+        /// <param name="str13">連結する14番目の文字列</param>
+        /// <param name="str14">連結する15番目の文字列</param>
+        /// <param name="str15">連結する16番目の文字列</param>
+        /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Join(char separator, string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13, string str14, string str15)
         {

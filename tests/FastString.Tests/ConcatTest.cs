@@ -1,4 +1,4 @@
-using AutoFixture.Xunit2;
+ï»¿using AutoFixture.Xunit2;
 using FluentAssertions;
 using Xunit;
 
@@ -7,7 +7,7 @@ namespace FastStringUtility.Tests
     public class ConcatTest
     {
         [Theory, AutoData]
-        public void Parameter0_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1)
+        public void Parameter0_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1)
         {
             var str = FastString.Concat(str0, str1);
 
@@ -15,7 +15,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter1_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2)
+        public void Parameter1_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2)
         {
             var str = FastString.Concat(str0, str1, str2);
 
@@ -23,7 +23,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter2_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3)
+        public void Parameter2_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3)
         {
             var str = FastString.Concat(str0, str1, str2, str3);
 
@@ -31,7 +31,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter3_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4)
+        public void Parameter3_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4);
 
@@ -39,7 +39,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter4_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5)
+        public void Parameter4_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5);
 
@@ -47,7 +47,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter5_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6)
+        public void Parameter5_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6);
 
@@ -55,7 +55,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter6_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7)
+        public void Parameter6_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7);
 
@@ -63,7 +63,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter7_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8)
+        public void Parameter7_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7, str8);
 
@@ -71,7 +71,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter8_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9)
+        public void Parameter8_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7, str8, str9);
 
@@ -79,7 +79,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter9_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10)
+        public void Parameter9_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7, str8, str9, str10);
 
@@ -87,7 +87,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter10_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11)
+        public void Parameter10_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11);
 
@@ -95,7 +95,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter11_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12)
+        public void Parameter11_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12);
 
@@ -103,7 +103,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter12_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13)
+        public void Parameter12_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12, str13);
 
@@ -111,7 +111,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter13_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13, string str14)
+        public void Parameter13_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13, string str14)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12, str13, str14);
 
@@ -119,7 +119,7 @@ namespace FastStringUtility.Tests
         }
 
         [Theory, AutoData]
-        public void Parameter14_•¡”‚Ì•¶š—ñ‚ğ“ü—Í_˜AŒ‹‚µ‚½•¶š—ñ‚ğ•Ô‚·(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13, string str14, string str15)
+        public void Parameter14_è¤‡æ•°ã®æ–‡å­—åˆ—ã‚’å…¥åŠ›_é€£çµã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã™(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13, string str14, string str15)
         {
             var str = FastString.Concat(str0, str1, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12, str13, str14, str15);
 

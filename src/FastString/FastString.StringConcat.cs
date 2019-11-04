@@ -1,4 +1,4 @@
-#if NETSTANDARD2_0
+ï»¿#if NETSTANDARD2_0
 using System.Runtime.CompilerServices;
 
 namespace FastStringUtility
@@ -6,11 +6,11 @@ namespace FastStringUtility
     partial class FastString
     {
         /// <summary>
-        /// w’è‚µ‚½2ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ2å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1)
         {
@@ -31,12 +31,12 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½3ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ3å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2)
         {
@@ -60,13 +60,13 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½4ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ4å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3)
         {
@@ -93,14 +93,14 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½5ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ5å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4)
         {
@@ -130,15 +130,15 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½6ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ6å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5)
         {
@@ -171,16 +171,16 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½7ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ7å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6)
         {
@@ -216,17 +216,17 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½8ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ8å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7)
         {
@@ -265,18 +265,18 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½9ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ9å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str8">˜AŒ‹‚·‚é9”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str8">é€£çµã™ã‚‹9ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8)
         {
@@ -318,19 +318,19 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½10ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ10å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str8">˜AŒ‹‚·‚é9”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str9">˜AŒ‹‚·‚é10”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str8">é€£çµã™ã‚‹9ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str9">é€£çµã™ã‚‹10ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9)
         {
@@ -375,20 +375,20 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½11ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ11å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str8">˜AŒ‹‚·‚é9”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str9">˜AŒ‹‚·‚é10”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str10">˜AŒ‹‚·‚é11”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str8">é€£çµã™ã‚‹9ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str9">é€£çµã™ã‚‹10ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str10">é€£çµã™ã‚‹11ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10)
         {
@@ -436,21 +436,21 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½12ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ12å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str8">˜AŒ‹‚·‚é9”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str9">˜AŒ‹‚·‚é10”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str10">˜AŒ‹‚·‚é11”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str11">˜AŒ‹‚·‚é12”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str8">é€£çµã™ã‚‹9ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str9">é€£çµã™ã‚‹10ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str10">é€£çµã™ã‚‹11ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str11">é€£çµã™ã‚‹12ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11)
         {
@@ -501,22 +501,22 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½13ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ13å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str8">˜AŒ‹‚·‚é9”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str9">˜AŒ‹‚·‚é10”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str10">˜AŒ‹‚·‚é11”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str11">˜AŒ‹‚·‚é12”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str12">˜AŒ‹‚·‚é13”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str8">é€£çµã™ã‚‹9ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str9">é€£çµã™ã‚‹10ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str10">é€£çµã™ã‚‹11ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str11">é€£çµã™ã‚‹12ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str12">é€£çµã™ã‚‹13ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12)
         {
@@ -570,23 +570,23 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½14ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ14å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str8">˜AŒ‹‚·‚é9”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str9">˜AŒ‹‚·‚é10”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str10">˜AŒ‹‚·‚é11”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str11">˜AŒ‹‚·‚é12”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str12">˜AŒ‹‚·‚é13”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str13">˜AŒ‹‚·‚é14”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str8">é€£çµã™ã‚‹9ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str9">é€£çµã™ã‚‹10ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str10">é€£çµã™ã‚‹11ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str11">é€£çµã™ã‚‹12ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str12">é€£çµã™ã‚‹13ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str13">é€£çµã™ã‚‹14ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13)
         {
@@ -643,24 +643,24 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½15ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ15å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str8">˜AŒ‹‚·‚é9”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str9">˜AŒ‹‚·‚é10”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str10">˜AŒ‹‚·‚é11”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str11">˜AŒ‹‚·‚é12”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str12">˜AŒ‹‚·‚é13”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str13">˜AŒ‹‚·‚é14”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str14">˜AŒ‹‚·‚é15”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str8">é€£çµã™ã‚‹9ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str9">é€£çµã™ã‚‹10ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str10">é€£çµã™ã‚‹11ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str11">é€£çµã™ã‚‹12ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str12">é€£çµã™ã‚‹13ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str13">é€£çµã™ã‚‹14ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str14">é€£çµã™ã‚‹15ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13, string str14)
         {
@@ -720,25 +720,25 @@ namespace FastStringUtility
         }
 
         /// <summary>
-        /// w’è‚µ‚½16ŒÂ‚Ì•¶š—ñ‚ğ˜AŒ‹‚µ‚Ü‚·B
+        /// æŒ‡å®šã—ãŸ16å€‹ã®æ–‡å­—åˆ—ã‚’é€£çµã—ã¾ã™ã€‚
         /// </summary>
-        /// <param name="str0">˜AŒ‹‚·‚éÅ‰‚Ì•¶š—ñ</param>
-        /// <param name="str1">˜AŒ‹‚·‚é2”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str2">˜AŒ‹‚·‚é3”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str3">˜AŒ‹‚·‚é4”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str4">˜AŒ‹‚·‚é5”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str5">˜AŒ‹‚·‚é6”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str6">˜AŒ‹‚·‚é7”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str7">˜AŒ‹‚·‚é8”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str8">˜AŒ‹‚·‚é9”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str9">˜AŒ‹‚·‚é10”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str10">˜AŒ‹‚·‚é11”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str11">˜AŒ‹‚·‚é12”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str12">˜AŒ‹‚·‚é13”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str13">˜AŒ‹‚·‚é14”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str14">˜AŒ‹‚·‚é15”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <param name="str15">˜AŒ‹‚·‚é16”Ô–Ú‚Ì•¶š—ñ</param>
-        /// <returns>•¶š—ñ</returns>
+        /// <param name="str0">é€£çµã™ã‚‹æœ€åˆã®æ–‡å­—åˆ—</param>
+        /// <param name="str1">é€£çµã™ã‚‹2ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str2">é€£çµã™ã‚‹3ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str3">é€£çµã™ã‚‹4ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str4">é€£çµã™ã‚‹5ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str5">é€£çµã™ã‚‹6ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str6">é€£çµã™ã‚‹7ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str7">é€£çµã™ã‚‹8ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str8">é€£çµã™ã‚‹9ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str9">é€£çµã™ã‚‹10ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str10">é€£çµã™ã‚‹11ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str11">é€£çµã™ã‚‹12ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str12">é€£çµã™ã‚‹13ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str13">é€£çµã™ã‚‹14ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str14">é€£çµã™ã‚‹15ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <param name="str15">é€£çµã™ã‚‹16ç•ªç›®ã®æ–‡å­—åˆ—</param>
+        /// <returns>æ–‡å­—åˆ—</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static unsafe string Concat(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8, string str9, string str10, string str11, string str12, string str13, string str14, string str15)
         {

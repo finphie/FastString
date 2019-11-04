@@ -1,4 +1,4 @@
-namespace FastStringUtility
+﻿namespace FastStringUtility
 {
     /// <summary>
     /// <see cref="string"/>関連のヘルパークラス

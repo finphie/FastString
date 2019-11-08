@@ -1,6 +1,11 @@
-name: .NET Core
+name: build
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [ opened, synchronize ]
 
 jobs:
   build:
@@ -8,14 +13,9 @@ jobs:
     strategy:
       matrix:
         os: [ windows-latest, macOS-latest, ubuntu-latest ]
-        dotnet: [ 3.0.100 ]
 
     steps:
     - uses: actions/checkout@v1
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: ${{ matrix.dotnet }}
     - name: .NET Build
       run: dotnet build --configuration Release
     - name: .NET Test

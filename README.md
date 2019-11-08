@@ -1,5 +1,7 @@
 # FastString
 
+[![Build Status](https://github.com/finphie/FastString/workflows/build/badge.svg)](https://github.com/finphie/FastString/actions)
+
 .NET用の高速な文字列処理ライブラリです。
 
 ## 説明

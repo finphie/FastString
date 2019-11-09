@@ -1,0 +1,27 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: .NET Pack
+        run: dotnet pack --configuration Release
+      - name: Push(NuGet)
+        run: dotnet nuget push **/*.nupkg --api-key $TOKEN
+        env:
+          TOKEN: ${{ secrets.NUGET_API_KEY }}
+      - name: GitHub Package Registry
+        run: nuget sources add -name "GPR" -Source $SOURCE -Username $GITHUB_ACTOR -Password $TOKEN 
+        env:
+          SOURCE: https://nuget.pkg.github.com/$GITHUB_ACTOR/index.json
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push(GitHub Package Registry)
+        run: nuget push **/*.nupkg -Source "GPR"

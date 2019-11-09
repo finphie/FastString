@@ -1,26 +1,42 @@
 name: deploy
 
 on:
-  check_suite:
-    types: completed
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' && github.event.check_suite.conclusion == 'success'
-    
+    runs-on: windows-latest
+
     steps:
       - uses: actions/checkout@v1
       - name: .NET Pack
         run: dotnet pack --configuration Release
-      - name: Push(NuGet)
-        run: dotnet nuget push **/*.nupkg --api-key $TOKEN
+      - name: Setup NuGet CLI
+        run: |
+          curl $Env:URL --output nuget.exe
+          echo ('::add-path::' + (Get-Location).Path)
         env:
+          URL: ${{ 'https://dist.nuget.org/win-x86-commandline/latest/nuget.exe' }}
+      - name: Push(Azure Artifacts)
+        run: |
+          nuget sources add -name "AA" -source $Env:SOURCE -username $Env:GITHUB_ACTOR -password $Env:TOKEN
+          nuget push **/*.nupkg -source "AA" -apikey $Env:TOKEN
+        env:
+          SOURCE: ${{ 'https://pkgs.dev.azure.com/finphie/FastString/_packaging/PublicFeed/nuget/v3/index.json' }}
+          TOKEN: ${{ secrets.AZURE_ARTIFACT_TOKEN }}
+      - name: Push(NuGet)
+        if: startsWith(github.ref, 'ref/tags/v')
+        run: dotnet nuget push **/*.nupkg --source $Env:SOURCE --api-key $Env:TOKEN
+        env:
+          SOURCE: ${{ 'https://api.nuget.org/v3/index.json' }}
           TOKEN: ${{ secrets.NUGET_API_KEY }}
       - name: Push(GitHub Package Registry)
+        if: success()
         run: |
-          nuget sources add -name "GPR" -Source $SOURCE -Username $GITHUB_ACTOR -Password $TOKEN
-          nuget push **/*.nupkg -Source "GPR" 
+          nuget sources add -name "GPR" -source $Env:SOURCE -username $Env:GITHUB_ACTOR -password $Env:TOKEN
+          nuget push **/*.nupkg -source "GPR" 
         env:
-          SOURCE: https://nuget.pkg.github.com/$GITHUB_ACTOR/index.json
+          SOURCE: ${{ 'https://nuget.pkg.github.com/finphie/index.json' }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}

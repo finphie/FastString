@@ -33,7 +33,7 @@ jobs:
           SOURCE: ${{ 'https://api.nuget.org/v3/index.json' }}
           TOKEN: ${{ secrets.NUGET_API_KEY }}
       - name: Push(GitHub Package Registry)
-        if: success()
+        if: startsWith(github.ref, 'ref/tags/v')
         run: |
           nuget sources add -name "GPR" -source $Env:SOURCE -username $Env:GITHUB_ACTOR -password $Env:TOKEN
           nuget push **/*.nupkg -source "GPR" 

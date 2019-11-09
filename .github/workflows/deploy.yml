@@ -1,15 +1,14 @@
 name: deploy
 
 on:
-  push:
-    branches:
-      - master
+  check_suite:
+    types: completed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    needs: build
-
+    if: github.ref == 'refs/heads/master' && github.event.check_suite.conclusion == 'success'
+    
     steps:
       - uses: actions/checkout@v1
       - name: .NET Pack
@@ -18,10 +17,10 @@ jobs:
         run: dotnet nuget push **/*.nupkg --api-key $TOKEN
         env:
           TOKEN: ${{ secrets.NUGET_API_KEY }}
-      - name: GitHub Package Registry
-        run: nuget sources add -name "GPR" -Source $SOURCE -Username $GITHUB_ACTOR -Password $TOKEN 
+      - name: Push(GitHub Package Registry)
+        run: |
+          nuget sources add -name "GPR" -Source $SOURCE -Username $GITHUB_ACTOR -Password $TOKEN
+          nuget push **/*.nupkg -Source "GPR" 
         env:
           SOURCE: https://nuget.pkg.github.com/$GITHUB_ACTOR/index.json
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Push(GitHub Package Registry)
-        run: nuget push **/*.nupkg -Source "GPR"

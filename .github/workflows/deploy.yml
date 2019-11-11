@@ -4,39 +4,46 @@ on:
   push:
     branches:
       - master
+    tags:
+      - v.[0-9]+.[0-9]+.[0-9]+
 
 jobs:
-  deploy:
+  upload:
     runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v1
+
       - name: .NET Pack
         run: dotnet pack --configuration Release
+
       - name: Setup NuGet CLI
         run: |
           curl $Env:URL --output nuget.exe
-          echo ('::add-path::' + (Get-Location).Path)
+          echo "::add-path::$((Get-Location).Path)"
         env:
-          URL: ${{ 'https://dist.nuget.org/win-x86-commandline/latest/nuget.exe' }}
+          URL: 'https://dist.nuget.org/win-x86-commandline/latest/nuget.exe'
+
       - name: Push(Azure Artifacts)
         run: |
-          nuget sources add -name "AA" -source $Env:SOURCE -username $Env:GITHUB_ACTOR -password $Env:TOKEN
-          nuget push **/*.nupkg -source "AA" -apikey $Env:TOKEN
+          nuget sources add -name 'AA' -source $Env:SOURCE -username $Env:GITHUB_ACTOR -password $Env:TOKEN
+          nuget push **/*.nupkg -source 'AA' -apikey $Env:TOKEN
         env:
-          SOURCE: ${{ 'https://pkgs.dev.azure.com/finphie/FastString/_packaging/PublicFeed/nuget/v3/index.json' }}
+          SOURCE: 'https://pkgs.dev.azure.com/finphie/FastString/_packaging/PublicFeed/nuget/v3/index.json'
           TOKEN: ${{ secrets.AZURE_ARTIFACT_TOKEN }}
+
       - name: Push(NuGet)
         if: startsWith(github.ref, 'ref/tags/v')
         run: dotnet nuget push **/*.nupkg --source $Env:SOURCE --api-key $Env:TOKEN
         env:
-          SOURCE: ${{ 'https://api.nuget.org/v3/index.json' }}
+          SOURCE: 'https://api.nuget.org/v3/index.json'
           TOKEN: ${{ secrets.NUGET_API_KEY }}
+
       - name: Push(GitHub Package Registry)
         if: startsWith(github.ref, 'ref/tags/v')
         run: |
-          nuget sources add -name "GPR" -source $Env:SOURCE -username $Env:GITHUB_ACTOR -password $Env:TOKEN
-          nuget push **/*.nupkg -source "GPR" 
+          nuget sources add -name 'GPR' -source $Env:SOURCE -username $Env:GITHUB_ACTOR -password $Env:TOKEN
+          nuget push **/*.nupkg -source 'GPR' 
         env:
-          SOURCE: ${{ 'https://nuget.pkg.github.com/finphie/index.json' }}
+          SOURCE: 'https://nuget.pkg.github.com/finphie/index.json'
           TOKEN: ${{ secrets.GITHUB_TOKEN }}

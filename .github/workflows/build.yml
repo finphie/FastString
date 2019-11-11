@@ -8,7 +8,7 @@ on:
     types: [ opened, synchronize ]
 
 jobs:
-  build:
+  test:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -16,7 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+
     - name: .NET Build
       run: dotnet build --configuration Release
+
     - name: .NET Test
-      run: dotnet test --configuration Release
+      run: dotnet test --configuration Release --no-build

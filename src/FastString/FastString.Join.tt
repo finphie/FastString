@@ -1,8 +1,7 @@
-﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ template debug="false" hostspecific="false" language="C#" #>
 <#@ assembly name="System.Core" #>
 <#@ import namespace="System.Linq" #>
 <#@ output extension=".cs" #>
-#if NETCOREAPP3_0 || NETSTANDARD2_1
 using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -17,25 +16,27 @@ namespace FastStringUtility
 
 <# } #>
         /// <summary>
-        /// 指定した<#= Count + 2 #>個の文字列を連結します。
+        /// 指定した<#= Count + 2 #>個の文字列を連結します。各要素の間には、指定した区切り記号が挿入されます。
         /// </summary>
+        /// <param name="separator">区切り記号</param>
         /// <param name="str0">連結する最初の文字列</param>
 <# for (var i = 0;  i <= Count; i++) { #>
         /// <param name="str<#= i + 1 #>">連結する<#= i + 2 #>番目の文字列</param>
 <# } #>
         /// <returns>文字列</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static string Concat(<#= string.Join(", ", parameters.Select(x => $"in ReadOnlySpan<char> {x}")) #>)
+        public static string Join(char separator, <#= string.Join(", ", parameters.Select(x => $"in ReadOnlySpan<char> {x}")) #>)
         {
-            var length = <#= string.Join(" + ", parameters.Select(x => $"{x}.Length")) #>;
+            var length = <#= string.Join(" + ", parameters.Select(x => $"{x}.Length")) #> + <#= Count + 1 #>;
 
             var str = new string(default, length);
             ref var strStart = ref MemoryMarshal.GetReference(str.AsSpan());
 
             BinaryHelper.Copy(ref strStart, ref MemoryMarshal.GetReference(str0), str0.Length);
 <# for (var i = 0;  i <= Count; i++) { #>
+            Unsafe.Add(ref strStart, str<#= i #>.Length) = separator;
 
-            strStart = ref Unsafe.Add(ref strStart, str<#= i #>.Length);
+            strStart = ref Unsafe.Add(ref strStart, str<#= i #>.Length + 1);
             BinaryHelper.Copy(ref strStart, ref MemoryMarshal.GetReference(str<#= i + 1 #>), str<#= i + 1 #>.Length);
 <# } #>
 
@@ -44,4 +45,3 @@ namespace FastStringUtility
 <# } #>
     }
 }
-#endif

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Authors>finphie</Authors>
     <Copyright>© 2019 $(Authors)</Copyright>
-    <TargetFrameworks>netcoreapp3.0;netstandard2.1;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.0;netstandard2.1</TargetFrameworks>
     <Description>A fast string library for .NET.</Description>
     <PackageProjectUrl>https://github.com/finphie/FastString</PackageProjectUrl>
     <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
@@ -16,23 +16,6 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="FastString.SpanJoin.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>FastString.SpanJoin.tt</DependentUpon>
-    </None>
-    <None Include="FastString.StringJoin.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>FastString.StringJoin.tt</DependentUpon>
-    </None>
-  </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="GitVersionTask" Version="5.1.2">
       <PrivateAssets>all</PrivateAssets>
@@ -42,25 +25,20 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.6.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="FastString.SpanConcat.tt">
+    <None Update="FastString.Concat.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>FastString.SpanConcat.cs</LastGenOutput>
+      <LastGenOutput>FastString.Concat.cs</LastGenOutput>
     </None>
-    <None Update="FastString.SpanJoin.tt">
+    <None Update="FastString.Join.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>FastString.SpanJoin.cs</LastGenOutput>
-    </None>
-    <None Update="FastString.StringConcat.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>FastString.StringConcat.cs</LastGenOutput>
-    </None>
-    <None Update="FastString.StringJoin.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>FastString.StringJoin.cs</LastGenOutput>
+      <LastGenOutput>FastString.Join.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
@@ -69,25 +47,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="FastString.SpanConcat.cs">
+    <Compile Update="FastString.Concat.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>FastString.SpanConcat.tt</DependentUpon>
+      <DependentUpon>FastString.Concat.tt</DependentUpon>
     </Compile>
-    <Compile Update="FastString.SpanJoin.cs">
+    <Compile Update="FastString.Join.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>FastString.SpanJoin.tt</DependentUpon>
-    </Compile>
-    <Compile Update="FastString.StringConcat.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>FastString.StringConcat.tt</DependentUpon>
-    </Compile>
-    <Compile Update="FastString.StringJoin.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>FastString.StringJoin.tt</DependentUpon>
+      <DependentUpon>FastString.Join.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 

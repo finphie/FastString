@@ -1,9 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Authors>finphie</Authors>
     <Copyright>© 2019 $(Authors)</Copyright>
     <TargetFrameworks>netcoreapp3.0;netstandard2.1</TargetFrameworks>
+    <Nullable>enable</Nullable>
     <Description>A fast string library for .NET.</Description>
     <PackageProjectUrl>https://github.com/finphie/FastString</PackageProjectUrl>
     <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>

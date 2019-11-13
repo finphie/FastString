@@ -15,7 +15,7 @@ namespace FastStringUtility
         /// <returns>引数がnullまたは空文字列の場合は、true。それ以外の場合はfalse。</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsNullOrEmpty(in ReadOnlySpan<char> value)
-            => value == null || value.Length == 0;
+            => value.Length == 0;
 
         /// <summary>
         /// 指定された文字列がnullまたは空文字列、空白文字であるかどうかを示します。
@@ -25,9 +25,6 @@ namespace FastStringUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsNullOrWhiteSpace(in ReadOnlySpan<char> value)
         {
-            if (value == null)
-                return true;
-
             foreach (var c in value)
             {
                 if (!char.IsWhiteSpace(c))

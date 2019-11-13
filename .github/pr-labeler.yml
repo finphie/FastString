@@ -1,0 +1,11 @@
+breaking: breaking/*
+feature: feature/*
+enhancement: enhancement/*
+performance: performance/*
+fix: fix/*
+documentation: documentation/*
+dependencies: dependencies/*
+refactor: refactor/*
+chore: chore/*
+test: test/*
+ci: ci/*

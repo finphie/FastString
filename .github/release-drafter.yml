@@ -2,25 +2,27 @@ name-template: Version $NEXT_PATCH_VERSION
 tag-template: v$NEXT_PATCH_VERSION
 change-template: '- $TITLE (#$NUMBER) @$AUTHOR'
 categories:
+  - title: Breaking changes
+    label: breaking
   - title: Features
-    labels:
-      - feature
+    label: feature
   - title: Enhancements
     labels:
       - enhancement
       - performance
   - title: Bug Fixes
-    labels:
-      - bug
-      - fix
-  - title: Maintenance
-    labels:
-      - chore
-      - refactoring
+    label: fix
   - title: Documentation changes
     label: documentation
   - title: Dependency updates
     label: dependencies
+  - title: Maintenance
+    labels:
+      - refactor
+      - chore
+  - title: Tests
+    label: test
+
 exclude-labels:
   - ci
 template: |

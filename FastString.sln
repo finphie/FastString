@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E9B80E19-A12
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{41797E28-104A-478E-8DC3-BF90C43C4C2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastString.Tests", "tests\FastString.Tests\FastString.Tests.csproj", "{94D4FD7A-8792-4123-B80B-B300C63847BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastString.Tests", "tests\FastString.Tests\FastString.Tests.csproj", "{94D4FD7A-8792-4123-B80B-B300C63847BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastString.Benchmarks", "src\FastString.Benchmarks\FastString.Benchmarks.csproj", "{4518B7D2-9774-4109-95F7-3D0D0E2993A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{94D4FD7A-8792-4123-B80B-B300C63847BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94D4FD7A-8792-4123-B80B-B300C63847BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94D4FD7A-8792-4123-B80B-B300C63847BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4518B7D2-9774-4109-95F7-3D0D0E2993A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4518B7D2-9774-4109-95F7-3D0D0E2993A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4518B7D2-9774-4109-95F7-3D0D0E2993A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4518B7D2-9774-4109-95F7-3D0D0E2993A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E31E7467-01DA-436A-8A8B-12A5D5A58156} = {E9B80E19-A12C-41D7-AAA7-0181FE1D2E18}
 		{94D4FD7A-8792-4123-B80B-B300C63847BC} = {41797E28-104A-478E-8DC3-BF90C43C4C2C}
+		{4518B7D2-9774-4109-95F7-3D0D0E2993A7} = {E9B80E19-A12C-41D7-AAA7-0181FE1D2E18}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75183203-EAFB-41D7-B363-7D4B4E8A7E04}
